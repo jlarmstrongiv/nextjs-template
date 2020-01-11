@@ -1,4 +1,22 @@
-const Home = () => <h1>Hello World!</h1>;
+import Head from 'next/head';
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+  color: red;
+`;
+
+const Home = () => (
+  <React.Fragment>
+    <Head>
+      <title>My page title</title>
+      <meta
+        name="description"
+        content="A page's description, usually one or two sentences."
+      />
+    </Head>
+    <H1>Hi</H1>
+  </React.Fragment>
+);
 
 export default Home;
 
@@ -10,3 +28,5 @@ export default Home;
 // https://github.com/zeit/next.js/blob/canary/docs/concepts/_data-fetching.md
 // https://github.com/zeit/next.js/blob/canary/docs/concepts/_server-side-and-client-side.md
 // lazy loading modules https://nextjs.org/learn/excel/lazy-loading-modules/lazy-loading
+
+// Apollo https://github.com/zeit/next.js/tree/canary/examples/with-apollo
