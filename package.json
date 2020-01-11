@@ -16,7 +16,6 @@
     "preserve": "next build && next export",
     "serve": "serve out",
     "lighthouse": "lighthouse http://127.0.0.1:5000/ --output-path ./lighthouse/ --view",
-    "lighthouse2": "echo 'npm run serve && Chrome > View > Developer > Developer Tools > Audits > localhost:5000'",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
