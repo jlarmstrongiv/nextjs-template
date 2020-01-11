@@ -1,9 +1,9 @@
 // @ts-check
 const path = require('path');
-const webpack = require('webpack');
 const exportPathMap = require('./exportPathMap');
+const withCSS = require('@zeit/next-css');
 
-module.exports = {
+const config = {
   exportTrailingSlash: true,
   exportPathMap,
   reactStrictMode: true,
@@ -26,3 +26,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = withCSS(config);
