@@ -1,6 +1,10 @@
 // @ts-check
 const path = require('path');
 const exportPathMap = require('./exportPathMap');
+// postcss
+// https://gist.github.com/drenther/a3ab45461a772d7fe577ab05be2fc652
+// https://dev.to/notrab/get-up-and-running-with-tailwind-css-and-next-js-3a73
+// https://github.com/postcss/autoprefixer#browsers
 const withCSS = require('@zeit/next-css');
 
 const config = {
