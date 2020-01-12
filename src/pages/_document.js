@@ -61,7 +61,10 @@ export default class MyDocument extends Document {
 
           {/* Avoid duplication of meta tags */}
           {/* https://nextjs.org/docs/api-reference/next/head */}
-          <meta charSet="UTF-8" />
+
+          <meta charSet="UTF-8" key="charSet" />
+
+          {/* https://nextjs.org/blog/next-8-0-4#default-viewport-meta-tag */}
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
