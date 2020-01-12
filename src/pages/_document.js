@@ -71,7 +71,7 @@ export default class MyDocument extends Document {
             key="viewport"
           />
           <meta
-            http-equiv="X-UA-Compatible"
+            httpEquiv="X-UA-Compatible"
             content="ie=edge"
             key="X-UA-Compatible"
           />
